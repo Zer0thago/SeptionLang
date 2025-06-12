@@ -1,0 +1,25 @@
+OPCODE(PUSH)    // Push value onto stack
+OPCODE(POP)     // Pop value from stack
+OPCODE(DP)      // Duplicate top value
+OPCODE(SWP)     // Swap top two values
+
+OPCODE(ADD)     // Add two top integers
+OPCODE(SUB)     // Subtract top from second-top
+OPCODE(MUL)     // Multiply two integers
+OPCODE(DIV)     // Divide second-top by top
+OPCODE(MOD)     // Modulo operation
+OPCODE(RND)     // Push random int in range [min, max]
+
+OPCODE(JEQ0)    // Jump if top is 0
+OPCODE(JGT0)    // Jump if top > 0
+OPCODE(JMP)     // Unconditional jump
+OPCODE(CALL)    // Function call
+OPCODE(RET)     // Return from function
+OPCODE(HLT)     // Halt execution
+
+OPCODE(COP)     // Constant output (string/int)
+OPCODE(PRINT)   // Print top of stack
+OPCODE(NL)      // New line
+OPCODE(CIP)     // Console input, push to stack
+
+OPCODE(HX)      // Exit program
