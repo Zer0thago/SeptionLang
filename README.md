@@ -62,12 +62,29 @@ HLT
 
 ## Opcodes
 
-Supported opcodes include (but are not limited to):
-
-- PUSH, POP, DP, SWP  
-- ADD, SUB, MUL, DIV, MOD, RND  
-- JEQ0, JGT0, JMP, CALL, RET, HLT  
-- COP, PRINT, NL, CIP, HX  
+```
+PUSH   Push value (number/string) to stack
+COP    Print constant value from code    
+JEQ0   Jump to label if stack top == 0    
+JGT0   Jump to label if stack top > 0    
+HX     Exit program immediately    
+ADD    Add top two stack numbers    
+PRINT  Print top stack value    
+NL     Print newline    
+CALL   Call subroutine (pushes return addr)    
+HLT    Halt program    
+DP     Duplicate top stack value    
+SUB    Subtract (top from second)    
+CIP    Get user input (→stack)    
+RET    Return from subroutine
+SWP    Swap top two stack
+POP    Remove top stack value
+JMP    Jump to label (no return)    
+MUL    Multiply top two numbers    
+DIV    Divide (second / top)    
+MOD    Modulo (second % top)
+RND    Random num (min/max → rand)
+```
 
 ## Contributing
 
