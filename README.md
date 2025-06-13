@@ -1,4 +1,4 @@
-/*
+
 # SeptionLang
 
 SeptionLang is a simple stack-based interpreted language with a minimalistic instruction set, designed for learning and experimenting with virtual machines and interpreters.
@@ -72,4 +72,3 @@ Supported opcodes include (but are not limited to):
 ## Contributing
 
 Feel free to fork, submit issues, or pull requests to improve SeptionLang.
-*/
